@@ -2,10 +2,14 @@ command=~/.local/bin/statusbar/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
-[record]
-command=cat /tmp/recordingicon
-interval=once
-signal=9
+#[pomodoro]
+#label=🍅
+#interval=1
+
+#[record]
+#command=cat /tmp/recordingicon
+#interval=once
+#signal=9
 
 [music]
 label=🎼
@@ -17,9 +21,6 @@ label=📰
 interval=once
 signal=6
 
-#[iplocate]
-#interval=30
-
 [pacpackages]
 label=📦
 interval=once
@@ -30,7 +31,7 @@ interval=20
 signal=7
 
 [weather]
-interval=18000
+interval=3600
 signal=5
 
 [mailbox]
@@ -59,7 +60,7 @@ signal=10
 #command=disk /home 🏠
 
 [battery]
-command=battery BAT0
+command=battery BAT1
 interval=5
 
 [clock]

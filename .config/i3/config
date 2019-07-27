@@ -93,15 +93,6 @@ client.background $black
 
 bar {
 font pango:mono 10
-colors {
-		background $darkblack
-		statusline $darkwhite
-		separator $cyan
-		focused_workspace  $blue $darkblue $darkblack
-		active_workspace   $blue $blue $darkwhite
-		inactive_workspace $darkblack $darkblack $white
-		urgent_workspace   $darkblack $darkblack $white
-	}
 status_command i3blocks
 position top
 mode dock
@@ -450,3 +441,4 @@ bindsym XF86Documents		exec $term -e $FILE ~/Documents
 ##bindsym XF86Bluetooth		exec
 bindsym XF86WLAN		exec $netrefresh
 exec_always --no-startup-id notify-send -i ~/.scripts/pix/larbs.png '<b>Welcome to LARBS:</b> Press Super+F1 for the manual.' -t 10000
+exec_always --no-startup-id notify-send -i ~/.local/share/larbs/larbs.png 'Welcome to LARBS:' 'Press Super+F1 for the manual.' -t 10000
